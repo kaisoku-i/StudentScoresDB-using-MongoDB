@@ -69,7 +69,7 @@ for i in range(200):
         else:
             pass
         if count==3:print(s_list[i])
-#None students scored below average and above 40% in all the categories      
+#None of the students scored below average and above 40% in all the categories      
 
 #new collection which consists of students who scored below the fail mark in all the categories
 records.aggregate([{'$match':{'$and':[{'scores.0.remark':'fail'},{'scores.1.remark':'fail'},{'scores.2.remark':'fail'}]}},
