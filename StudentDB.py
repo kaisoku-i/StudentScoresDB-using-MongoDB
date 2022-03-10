@@ -6,7 +6,7 @@ client=pymongo.MongoClient("mongodb://localhost:27017")
 db=client.Students
 records=db.Examscores
 
-file=[line.rstrip() for line in open('task2\\students.txt','r+',newline='')]
+file=[line.rstrip() for line in open('students.txt','r+',newline='')]
 
 for item in file:
     data=json.loads(item)
