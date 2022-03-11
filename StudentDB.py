@@ -64,7 +64,7 @@ avg_all=list(tot_val.find({}))
 for i in range(200):
     count=0
     for j in range(len(s_list[i]['scores'])):
-        if (s_list[i]['scores'][j]['type']==avg_all[j]['_id']) and (40<=s_list[i]['scores'][j]['score']<=48):
+        if (s_list[i]['scores'][j]['type']==avg_all[j]['_id']) and (40<=s_list[i]['scores'][j]['score']<=avg_all[j]['TotalAverage']):
             count+=1
         else:
             pass
